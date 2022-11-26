@@ -41,12 +41,14 @@ For citing the previous EMSL/PNNL Basis Set Exchange, please cite the following 
    usage
    bse_cli
    conversion
-   dunning_mod
+   minimal_sets
+   augmentation
+   calendarization
    bundling
    user_api
    developer
    bsecurate_cli
-   project_doc
+   web_api
 
 
 License
