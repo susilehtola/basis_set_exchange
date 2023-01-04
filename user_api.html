@@ -1,36 +1,73 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <title>Main User API &mdash; Basis Set Exchange  documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
-    <script src="_static/js/theme.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Developer Documentation" href="developer.html" />
     <link rel="prev" title="Creating Basis Set Bundles" href="bundling.html" /> 
 </head>
 
-<body class="wy-body-for-nav"> 
+<body class="wy-body-for-nav">
+
+   
   <div class="wy-grid-for-nav">
+    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
+          
+
+          
             <a href="index.html" class="icon icon-home"> Basis Set Exchange
+          
+
+          
           </a>
+
+          
+            
+            
+          
+
+          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -38,7 +75,18 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Quickstart and Basic Usage</a></li>
@@ -76,41 +124,82 @@
 <li class="toctree-l1"><a class="reference internal" href="web_api.html">REST API Reference</a></li>
 </ul>
 
+            
+          
         </div>
+        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Basis Set Exchange</a>
+        
       </nav>
 
+
       <div class="wy-nav-content">
+        
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home"></a></li>
-      <li class="breadcrumb-item active">Main User API</li>
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Main User API</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
+        
+          
             <a href="_sources/user_api.rst.txt" rel="nofollow"> View page source</a>
+          
+        
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-             
+            
   <section id="module-basis_set_exchange">
-<span id="main-user-api"></span><h1>Main User API<a class="headerlink" href="#module-basis_set_exchange" title="Permalink to this heading"></a></h1>
+<span id="main-user-api"></span><h1>Main User API<a class="headerlink" href="#module-basis_set_exchange" title="Permalink to this heading">¶</a></h1>
 <p>Basis Set Exchange Python library</p>
 <p>This package contains utilities for obtaining, reading, writing,
 and converting basis set information</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="basis_set_exchange.convert_formatted_basis_file">
-<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">convert_formatted_basis_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path_in</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_path_out</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_fmt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_fmt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'utf-8-sig'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">make_gen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.convert_formatted_basis_file" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">convert_formatted_basis_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path_in</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_path_out</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_fmt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_fmt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'utf-8-sig'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">make_gen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.convert_formatted_basis_file" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert a formatted basis set file to another format</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>file_path_in</strong> (<em>str</em>) – Path to the file to be read</p></li>
 <li><p><strong>file_path_out</strong> (<em>str</em>) – Path to the file to be written.</p></li>
@@ -119,10 +208,10 @@ and converting basis set information</p>
 <li><p><strong>encoding</strong> (<em>str</em>) – The encoding of the input file</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The basis set as a str with the new format</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
@@ -130,20 +219,20 @@ and converting basis set information</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="basis_set_exchange.convert_formatted_basis_str">
-<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">convert_formatted_basis_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">basis_in</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_fmt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_fmt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.convert_formatted_basis_str" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">convert_formatted_basis_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">basis_in</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_fmt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_fmt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.convert_formatted_basis_str" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert a formatted basis set to another format</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>basis_in</strong> (<em>str</em>) – String representing the formatted input basis set input</p></li>
 <li><p><strong>in_fmt</strong> (<em>str</em>) – The format of the basis set stored in basis_in</p></li>
 <li><p><strong>out_fmt</strong> (<em>str</em>) – The desired output format</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The basis set as a str with the new format</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
@@ -151,11 +240,11 @@ and converting basis set information</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="basis_set_exchange.create_bundle">
-<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">create_bundle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">outfile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reffmt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">archive_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.create_bundle" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">create_bundle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">outfile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reffmt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">archive_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.create_bundle" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a single archive file containing all basis
 sets in a given format</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>outfile</strong> (<em>str</em>) – Path to the file to create. Existing files will be overwritten</p></li>
 <li><p><strong>fmt</strong> (<em>str</em>) – Format of the basis set to archive (nwchem, turbomole, …)</p></li>
@@ -166,7 +255,7 @@ None, which will autodetect based on the outfile name</p></li>
 it is in the ‘data’ subdirectory of this project.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p>None</p>
 </dd>
 </dl>
@@ -174,11 +263,11 @@ it is in the ‘data’ subdirectory of this project.</p></li>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="basis_set_exchange.filter_basis_sets">
-<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">filter_basis_sets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">substr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">family</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">role</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elements</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.filter_basis_sets" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">filter_basis_sets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">substr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">family</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">role</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elements</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.filter_basis_sets" title="Permalink to this definition">¶</a></dt>
 <dd><p>Filter basis sets by some criteria</p>
 <p>All parameters are ANDed together and are not case sensitive.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>substr</strong> (<em>str</em>) – Substring to search for in the basis set name</p></li>
 <li><p><strong>family</strong> (<em>str</em>) – Family the basis set belongs to</p></li>
@@ -192,10 +281,10 @@ Z numbers and symbols (case insensitive) can be used interchangeably
 it is in the ‘data’ subdirectory of this project.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Basis set metadata that matches the search criteria</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>dict</p>
 </dd>
 </dl>
@@ -203,12 +292,12 @@ it is in the ‘data’ subdirectory of this project.</p></li>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="basis_set_exchange.get_all_basis_names">
-<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">get_all_basis_names</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.get_all_basis_names" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">get_all_basis_names</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.get_all_basis_names" title="Permalink to this definition">¶</a></dt>
 <dd><p>Obtain a list of all basis set names</p>
 <p>The returned list is the internal representation of the basis set name.</p>
 <p>The data is read from the METADATA.json file in the data directory.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>data_dir</strong> (<em>str</em>) – Data directory with all the basis set information. By default,
 it is in the ‘data’ subdirectory of this project.</p>
 </dd>
@@ -217,19 +306,19 @@ it is in the ‘data’ subdirectory of this project.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="basis_set_exchange.get_archive_types">
-<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">get_archive_types</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.get_archive_types" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">get_archive_types</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.get_archive_types" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return information related to the types of archives available</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="basis_set_exchange.get_basis">
-<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">get_basis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elements</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uncontract_general</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uncontract_spdf</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uncontract_segmented</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remove_free_primitives</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">make_general</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optimize_general</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">augment_diffuse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">augment_steep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_aux</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">header</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.get_basis" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">get_basis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elements</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uncontract_general</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uncontract_spdf</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uncontract_segmented</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remove_free_primitives</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">make_general</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optimize_general</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">augment_diffuse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">augment_steep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_aux</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">header</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.get_basis" title="Permalink to this definition">¶</a></dt>
 <dd><p>Obtain a basis set</p>
 <p>This is the main function for getting basis set information.
 This function reads in all the basis data and returns it either
 as a string or as a python dictionary.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>name</strong> (<em>str</em>) – Name of the basis set. This is not case sensitive.</p></li>
 <li><p><strong>elements</strong> (<em>str</em><em> or </em><em>list</em>) – <p>List of elements that you want the basis set for.
@@ -281,11 +370,11 @@ basis), 2 (return Auto-ABS Coulomb fitting basis)</p></li>
 it is in the ‘data’ subdirectory of this project.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The basis set in the desired format. If <cite>fmt</cite> is <strong>None</strong>, this will be a python
 dictionary. Otherwise, it will be a string.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>str or dict</p>
 </dd>
 </dl>
@@ -293,19 +382,19 @@ dictionary. Otherwise, it will be a string.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="basis_set_exchange.get_basis_family">
-<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">get_basis_family</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">basis_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.get_basis_family" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">get_basis_family</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">basis_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.get_basis_family" title="Permalink to this definition">¶</a></dt>
 <dd><p>Lookup a family by a basis set name</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="basis_set_exchange.get_data_dir">
-<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">get_data_dir</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.get_data_dir" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">get_data_dir</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.get_data_dir" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the default data directory of this installation</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="basis_set_exchange.get_formats">
-<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">get_formats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function_types</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.get_formats" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">get_formats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function_types</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.get_formats" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return information about the basis set formats available</p>
 <p>The returned data is a map of format to display name. The format
 can be passed as the fmt argument to <a class="reference internal" href="#basis_set_exchange.get_basis" title="basis_set_exchange.get_basis"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_basis()</span></code></a></p>
@@ -315,14 +404,14 @@ supporting the given function types will be returned.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="basis_set_exchange.get_reader_formats">
-<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">get_reader_formats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.get_reader_formats" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">get_reader_formats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.get_reader_formats" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the basis set formats that can be read by this library.</p>
 <p>This is returned as an ordered dictionary of key to display name.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="basis_set_exchange.get_reference_formats">
-<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">get_reference_formats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.get_reference_formats" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">get_reference_formats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.get_reference_formats" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return information about the reference/citation formats available</p>
 <p>The returned data is a map of format to display name. The format
 can be passed as the fmt argument to <a class="reference internal" href="#basis_set_exchange.get_references" title="basis_set_exchange.get_references"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_references()</span></code></a></p>
@@ -330,10 +419,10 @@ can be passed as the fmt argument to <a class="reference internal" href="#basis_
 
 <dl class="py function">
 <dt class="sig sig-object py" id="basis_set_exchange.get_references">
-<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">get_references</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">basis_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elements</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.get_references" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">get_references</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">basis_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elements</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.get_references" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the references/citations for a basis set</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>basis_name</strong> (<em>str</em>) – Name of the basis set. This is not case sensitive.</p></li>
 <li><p><strong>elements</strong> (<em>list</em>) – List of element numbers that you want the basis set for. By default,
@@ -357,11 +446,11 @@ The <cite>fmt</cite> argument is not case sensitive.</p>
 it is in the ‘data’ subdirectory of this project.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The references for the given basis set in the desired format. If <cite>fmt</cite> is <strong>None</strong>, this will be a python
 dictionary. Otherwise, it will be a string.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>str or dict</p>
 </dd>
 </dl>
@@ -369,7 +458,7 @@ dictionary. Otherwise, it will be a string.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="basis_set_exchange.get_roles">
-<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">get_roles</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.get_roles" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">get_roles</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.get_roles" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return information about the available basis set roles available</p>
 <p>The returned data is a map of role to display name. The format
 can be passed as the role argument to fmt argument to <a class="reference internal" href="#basis_set_exchange.lookup_basis_by_role" title="basis_set_exchange.lookup_basis_by_role"><code class="xref py py-func docutils literal notranslate"><span class="pre">lookup_basis_by_role()</span></code></a></p>
@@ -377,7 +466,7 @@ can be passed as the role argument to fmt argument to <a class="reference intern
 
 <dl class="py function">
 <dt class="sig sig-object py" id="basis_set_exchange.get_writer_formats">
-<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">get_writer_formats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function_types</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.get_writer_formats" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">get_writer_formats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function_types</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.get_writer_formats" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return information about the basis set formats available for writing</p>
 <p>The returned data is a map of format to display name. The format
 can be passed as the fmt argument to <a class="reference internal" href="#basis_set_exchange.write_formatted_basis_str" title="basis_set_exchange.write_formatted_basis_str"><code class="xref py py-func docutils literal notranslate"><span class="pre">write_formatted_basis_str()</span></code></a> or
@@ -388,10 +477,10 @@ supporting the given function types will be returned.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="basis_set_exchange.lookup_basis_by_role">
-<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">lookup_basis_by_role</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">primary_basis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">role</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.lookup_basis_by_role" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">lookup_basis_by_role</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">primary_basis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">role</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.lookup_basis_by_role" title="Permalink to this definition">¶</a></dt>
 <dd><p>Lookup the name of an auxiliary basis set given a primary basis set and role</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>primary_basis</strong> (<em>str</em>) – The primary (orbital) basis set that we want the auxiliary
 basis set for. This is not case sensitive.</p></li>
@@ -416,11 +505,11 @@ roles.  The <cite>role</cite> argument is not case sensitive.</p>
 it is in the ‘data’ subdirectory of this project.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The name of the auxiliary basis set for the given primary basis
 and role.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
@@ -428,16 +517,16 @@ and role.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="basis_set_exchange.validate_data">
-<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">validate_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bs_data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.validate_data" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">validate_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bs_data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.validate_data" title="Permalink to this definition">¶</a></dt>
 <dd><p>Validates json basis set data against a schema</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>file_type</strong> (<em>str</em>) – Type of the data to validate. May be ‘component’, ‘element’, ‘table’, ‘complete’, ‘minimal’, or ‘references’</p></li>
 <li><p><strong>bs_data</strong> – Data to be validated</p></li>
 </ul>
 </dd>
-<dt class="field-even">Raises</dt>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>RuntimeError</strong> – If the file_type is not valid (and/or a schema doesn’t exist)</p></li>
 <li><p><strong>ValidationError</strong> – If the given file does not pass validation</p></li>
@@ -449,16 +538,16 @@ and role.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="basis_set_exchange.validate_file">
-<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">validate_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.validate_file" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">validate_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.validate_file" title="Permalink to this definition">¶</a></dt>
 <dd><p>Validates a file against a schema</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>file_type</strong> (<em>str</em>) – Type of file to read. May be ‘component’, ‘element’, ‘table’, ‘complete’, ‘minimal’, or ‘references’</p></li>
 <li><p><strong>file_path</strong> – Full path to the file to be validated</p></li>
 </ul>
 </dd>
-<dt class="field-even">Raises</dt>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>RuntimeError</strong> – If the file_type is not valid (and/or a schema doesn’t exist)</p></li>
 <li><p><strong>ValidationError</strong> – If the given file does not pass validation</p></li>
@@ -470,13 +559,13 @@ and role.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="basis_set_exchange.version">
-<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">version</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.version" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">version</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.version" title="Permalink to this definition">¶</a></dt>
 <dd><p>Obtain the version of the basis set exchange library (as a string)</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="basis_set_exchange.write_formatted_basis_str">
-<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">write_formatted_basis_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">basis_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">header</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.write_formatted_basis_str" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">basis_set_exchange.</span></span><span class="sig-name descname"><span class="pre">write_formatted_basis_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">basis_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">header</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#basis_set_exchange.write_formatted_basis_str" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the basis set data as a string representing
 the data in the specified output format</p>
 </dd></dl>
@@ -485,33 +574,50 @@ the data in the specified output format</p>
 
 
            </div>
+           
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="bundling.html" class="btn btn-neutral float-left" title="Creating Basis Set Bundles" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         <a href="developer.html" class="btn btn-neutral float-right" title="Developer Documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="bundling.html" class="btn btn-neutral float-left" title="Creating Basis Set Bundles" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, Benjamin Pritchard and Susi Lehtola.</p>
-  </div>
+    <p>
+        &#169; Copyright 2022, Benjamin Pritchard and Susi Lehtola.
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
         </div>
       </div>
+
     </section>
+
   </div>
-  <script>
+  
+
+  <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

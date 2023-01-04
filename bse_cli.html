@@ -1,36 +1,73 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <title>The bse command line interface &mdash; Basis Set Exchange  documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
-    <script src="_static/js/theme.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Converting basis sets" href="conversion.html" />
     <link rel="prev" title="Quickstart and Basic Usage" href="usage.html" /> 
 </head>
 
-<body class="wy-body-for-nav"> 
+<body class="wy-body-for-nav">
+
+   
   <div class="wy-grid-for-nav">
+    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
+          
+
+          
             <a href="index.html" class="icon icon-home"> Basis Set Exchange
+          
+
+          
           </a>
+
+          
+            
+            
+          
+
+          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -38,7 +75,18 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Quickstart and Basic Usage</a></li>
@@ -83,44 +131,85 @@
 <li class="toctree-l1"><a class="reference internal" href="web_api.html">REST API Reference</a></li>
 </ul>
 
+            
+          
         </div>
+        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Basis Set Exchange</a>
+        
       </nav>
 
+
       <div class="wy-nav-content">
+        
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home"></a></li>
-      <li class="breadcrumb-item active">The bse command line interface</li>
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>The bse command line interface</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
+        
+          
             <a href="_sources/bse_cli.rst.txt" rel="nofollow"> View page source</a>
+          
+        
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-             
+            
   <section id="the-bse-command-line-interface">
-<span id="bse-cli"></span><h1>The bse command line interface<a class="headerlink" href="#the-bse-command-line-interface" title="Permalink to this heading"></a></h1>
+<span id="bse-cli"></span><h1>The bse command line interface<a class="headerlink" href="#the-bse-command-line-interface" title="Permalink to this heading">¶</a></h1>
 <p>The basis set exchange package contains a command-line interface called
 <code class="docutils literal notranslate"><span class="pre">bse</span></code>. This command can be used to obtain/print basis sets and references,
 as well as query the library for information and metadata.</p>
 <section id="installation">
-<span id="cliinstall"></span><h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h2>
+<span id="cliinstall"></span><h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">¶</a></h2>
 <p>The command line is automatically installed when the library is installed
 via <code class="docutils literal notranslate"><span class="pre">pip</span></code> or similar python package managers.</p>
 <p>Depending on how packages are installed, you may need to add the path to
 the <code class="docutils literal notranslate"><span class="pre">bse</span></code> program to the PATH environment variable.</p>
 </section>
 <section id="tab-completion">
-<h2>TAB completion<a class="headerlink" href="#tab-completion" title="Permalink to this heading"></a></h2>
+<h2>TAB completion<a class="headerlink" href="#tab-completion" title="Permalink to this heading">¶</a></h2>
 <p>Tab completion is available for the bash interpreter and is tremendously useful.
 If enabled, TAB autocompletion will be enabled for</p>
 <blockquote>
@@ -152,7 +241,7 @@ of the python <strong>argcomplete</strong> package and you may need to add the p
 environment variable.</p>
 </section>
 <section id="general-usage">
-<h2>General usage<a class="headerlink" href="#general-usage" title="Permalink to this heading"></a></h2>
+<h2>General usage<a class="headerlink" href="#general-usage" title="Permalink to this heading">¶</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">bse</span></code> command is generally followed by a subcommand (see below). <code class="docutils literal notranslate"><span class="pre">bse</span> <span class="pre">-h</span></code> will display help
 and <code class="docutils literal notranslate"><span class="pre">bse</span> <span class="pre">-V</span></code> will display the version and exit.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ bse -h
@@ -207,7 +296,7 @@ data directory will be used.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ bse -d ${HOME}/my_data_dir list-basis-sets
 Traceback (most recent call last):
   File &quot;/opt/hostedtoolcache/Python/3.10.9/x64/bin/bse&quot;, line 33, in &lt;module&gt;
-    sys.exit(load_entry_point(&#39;basis-set-exchange==0.8.12+219.g77d31348&#39;, &#39;console_scripts&#39;, &#39;bse&#39;)())
+    sys.exit(load_entry_point(&#39;basis-set-exchange==0.8.12+231.g5295dffb&#39;, &#39;console_scripts&#39;, &#39;bse&#39;)())
   File &quot;/opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/basis_set_exchange/cli/bse_cli.py&quot;, line 230, in run_bse_cli
     args = cli_check_normalize_args(args)
   File &quot;/opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/basis_set_exchange/cli/check.py&quot;, line 159, in cli_check_normalize_args
@@ -229,7 +318,7 @@ RuntimeError: Data directory &#39;/home/runner/my_data_dir&#39; does not exist o
 </pre></div>
 </div>
 <section id="element-strings">
-<h3>Element strings<a class="headerlink" href="#element-strings" title="Permalink to this heading"></a></h3>
+<h3>Element strings<a class="headerlink" href="#element-strings" title="Permalink to this heading">¶</a></h3>
 <p>Some subcommands take a string specifying which elements the subcommand will work with. This
 string is a comma-separated list of element symbols and/or Z numbers. Ranges can also be used.</p>
 <p>Symbols are not case sensitive and can be mixed with Z-numbers.</p>
@@ -244,7 +333,7 @@ string is a comma-separated list of element symbols and/or Z numbers. Ranges can
 </section>
 </section>
 <section id="subcommands">
-<h2>Subcommands<a class="headerlink" href="#subcommands" title="Permalink to this heading"></a></h2>
+<h2>Subcommands<a class="headerlink" href="#subcommands" title="Permalink to this heading">¶</a></h2>
 <p>Below is a list of the available subcommands. All subcommands
 can take the <code class="docutils literal notranslate"><span class="pre">-h</span></code> option to display help for that subcommand.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ bse get-basis -h
@@ -260,37 +349,38 @@ positional arguments:
 </pre></div>
 </div>
 <section id="list-formats">
-<h3>list-formats<a class="headerlink" href="#list-formats" title="Permalink to this heading"></a></h3>
+<h3>list-formats<a class="headerlink" href="#list-formats" title="Permalink to this heading">¶</a></h3>
 <p>Lists the available output formats of basis sets.
 With <code class="docutils literal notranslate"><span class="pre">-n</span></code> or <code class="docutils literal notranslate"><span class="pre">--no-description</span></code>, the command will hide the description of the formats.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ bse list-formats
-acesii         ACES II
-bdf            BDF
-bsedebug       BSE Debug
-cfour          CFOUR
-cp2k           CP2K
-crystal        Crystal
-dalton         Dalton
-demon2k        deMon2K
-fhiaims        FHI-aims
-gamess_uk      GAMESS UK
-gamess_us      GAMESS US
-gaussian94     Gaussian
-gaussian94lib  Gaussian, system library
-jaguar         Jaguar
-json           JSON
-libmol         Molpro system library
-molcas         Molcas
-molpro         Molpro
-nwchem         NWChem
-orca           ORCA
-pqs            PQS
-psi4           Psi4
-qchem          Q-Chem
-qcschema       QCSchema
-ricdwrap       Wrapper for generating acCD auxiliary basis sets with OpenMolcas
-turbomole      Turbomole
-xtron          xTron
+acesii          ACES II
+bdf             BDF
+bsedebug        BSE Debug
+cfour           CFOUR
+cp2k            CP2K
+crystal         Crystal
+dalton          Dalton
+demon2k         deMon2K
+fhiaims         FHI-aims
+gamess_uk       GAMESS UK
+gamess_us       GAMESS US
+gaussian94      Gaussian
+gaussian94lib   Gaussian, system library
+jaguar          Jaguar
+json            JSON
+libmol          Molpro system library
+molcas          Molcas
+molcas_library  Molcas basis_library
+molpro          Molpro
+nwchem          NWChem
+orca            ORCA
+pqs             PQS
+psi4            Psi4
+qchem           Q-Chem
+qcschema        QCSchema
+ricdwrap        Wrapper for generating acCD auxiliary basis sets with OpenMolcas
+turbomole       Turbomole
+xtron           xTron
 </pre></div>
 </div>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ bse list-formats -n
@@ -311,6 +401,7 @@ jaguar
 json
 libmol
 molcas
+molcas_library
 molpro
 nwchem
 orca
@@ -325,7 +416,7 @@ xtron
 </div>
 </section>
 <section id="list-ref-formats">
-<h3>list-ref-formats<a class="headerlink" href="#list-ref-formats" title="Permalink to this heading"></a></h3>
+<h3>list-ref-formats<a class="headerlink" href="#list-ref-formats" title="Permalink to this heading">¶</a></h3>
 <p>Lists the available output formats of references.
 With <code class="docutils literal notranslate"><span class="pre">-n</span></code> or <code class="docutils literal notranslate"><span class="pre">--no-description</span></code>, the command will hide the description of the formats.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ bse list-ref-formats
@@ -346,63 +437,65 @@ json
 </div>
 </section>
 <section id="list-writer-formats">
-<h3>list-writer-formats<a class="headerlink" href="#list-writer-formats" title="Permalink to this heading"></a></h3>
+<h3>list-writer-formats<a class="headerlink" href="#list-writer-formats" title="Permalink to this heading">¶</a></h3>
 <p>Print a list of the formats that can be written to by the library</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ bse list-writer-formats
-acesii         ACES II
-bdf            BDF
-bsedebug       BSE Debug
-cfour          CFOUR
-cp2k           CP2K
-crystal        Crystal
-dalton         Dalton
-demon2k        deMon2K
-fhiaims        FHI-aims
-gamess_uk      GAMESS UK
-gamess_us      GAMESS US
-gaussian94     Gaussian
-gaussian94lib  Gaussian, system library
-jaguar         Jaguar
-json           JSON
-libmol         Molpro system library
-molcas         Molcas
-molpro         Molpro
-nwchem         NWChem
-orca           ORCA
-pqs            PQS
-psi4           Psi4
-qchem          Q-Chem
-qcschema       QCSchema
-ricdwrap       Wrapper for generating acCD auxiliary basis sets with OpenMolcas
-turbomole      Turbomole
-xtron          xTron
+acesii          ACES II
+bdf             BDF
+bsedebug        BSE Debug
+cfour           CFOUR
+cp2k            CP2K
+crystal         Crystal
+dalton          Dalton
+demon2k         deMon2K
+fhiaims         FHI-aims
+gamess_uk       GAMESS UK
+gamess_us       GAMESS US
+gaussian94      Gaussian
+gaussian94lib   Gaussian, system library
+jaguar          Jaguar
+json            JSON
+libmol          Molpro system library
+molcas          Molcas
+molcas_library  Molcas basis_library
+molpro          Molpro
+nwchem          NWChem
+orca            ORCA
+pqs             PQS
+psi4            Psi4
+qchem           Q-Chem
+qcschema        QCSchema
+ricdwrap        Wrapper for generating acCD auxiliary basis sets with OpenMolcas
+turbomole       Turbomole
+xtron           xTron
 </pre></div>
 </div>
 </section>
 <section id="list-reader-formats">
-<h3>list-reader-formats<a class="headerlink" href="#list-reader-formats" title="Permalink to this heading"></a></h3>
+<h3>list-reader-formats<a class="headerlink" href="#list-reader-formats" title="Permalink to this heading">¶</a></h3>
 <p>Print a list of the formats that can be read by the library</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ bse list-reader-formats
-turbomole   Turbomole
-gaussian94  Gaussian94
-nwchem      NWChem
-dalton      Dalton
-molcas      MolCAS
-molpro      Molpro
-libmol      Molpro system library
-cfour       CFOUR
-genbas      Genbas
-gbasis      GBasis
-demon2k     deMon2k
-ricdlib     MolCAS RICDlib
-gamess_us   GAMESS US
-cp2k        CP2K
-crystal     Crystal
+turbomole       Turbomole
+gaussian94      Gaussian94
+nwchem          NWChem
+dalton          Dalton
+molcas          Molcas
+molcas_library  Molcas basis_library
+molpro          Molpro
+libmol          Molpro system library
+cfour           CFOUR
+genbas          Genbas
+gbasis          GBasis
+demon2k         deMon2k
+ricdlib         MolCAS RICDlib
+gamess_us       GAMESS US
+cp2k            CP2K
+crystal         Crystal
 </pre></div>
 </div>
 </section>
 <section id="list-roles">
-<h3>list-roles<a class="headerlink" href="#list-roles" title="Permalink to this heading"></a></h3>
+<h3>list-roles<a class="headerlink" href="#list-roles" title="Permalink to this heading">¶</a></h3>
 <p>Lists the available basis set roles. Takes no arguments</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ bse list-roles
 orbital  Orbital basis
@@ -418,7 +511,7 @@ guess    Initial guess
 </div>
 </section>
 <section id="get-data-dir">
-<h3>get-data-dir<a class="headerlink" href="#get-data-dir" title="Permalink to this heading"></a></h3>
+<h3>get-data-dir<a class="headerlink" href="#get-data-dir" title="Permalink to this heading">¶</a></h3>
 <p>Print the default data directory (built into the BSE package)</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ bse get-data-dir
 /opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/basis_set_exchange/data
@@ -426,7 +519,7 @@ guess    Initial guess
 </div>
 </section>
 <section id="list-basis-sets">
-<h3>list-basis-sets<a class="headerlink" href="#list-basis-sets" title="Permalink to this heading"></a></h3>
+<h3>list-basis-sets<a class="headerlink" href="#list-basis-sets" title="Permalink to this heading">¶</a></h3>
 <p>Lists the available basis sets.
 This command respects the <code class="docutils literal notranslate"><span class="pre">--data-dir</span></code> option.
 With <code class="docutils literal notranslate"><span class="pre">-n</span></code> or <code class="docutils literal notranslate"><span class="pre">--no-description</span></code>, the command will hide the description of the basis set.</p>
@@ -455,7 +548,7 @@ x2c-JFIT-universal   x2c coulomb fitting
 </div>
 </section>
 <section id="list-families">
-<h3>list-families<a class="headerlink" href="#list-families" title="Permalink to this heading"></a></h3>
+<h3>list-families<a class="headerlink" href="#list-families" title="Permalink to this heading">¶</a></h3>
 <p>List all basis set families.
 This command respects the <code class="docutils literal notranslate"><span class="pre">--data-dir</span></code> option.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ bse list-families
@@ -469,7 +562,7 @@ ahlrichs_x2c
 </div>
 </section>
 <section id="lookup-by-role">
-<h3>lookup-by-role<a class="headerlink" href="#lookup-by-role" title="Permalink to this heading"></a></h3>
+<h3>lookup-by-role<a class="headerlink" href="#lookup-by-role" title="Permalink to this heading">¶</a></h3>
 <p>Find the name of an auxiliary basis set given the primary basis and the desired role.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ bse lookup-by-role def2-tzvp jfit
 def2-universal-jfit
@@ -477,7 +570,7 @@ def2-universal-jfit
 </div>
 </section>
 <section id="get-basis">
-<h3>get-basis<a class="headerlink" href="#get-basis" title="Permalink to this heading"></a></h3>
+<h3>get-basis<a class="headerlink" href="#get-basis" title="Permalink to this heading">¶</a></h3>
 <p>Print a formatted basis set from the library.
 This command has several options. See <code class="docutils literal notranslate"><span class="pre">bse</span> <span class="pre">get-basis</span> <span class="pre">-h</span></code> for a complete list.</p>
 <p>This subcommand takes two required arguments: the name of the basis set
@@ -491,7 +584,7 @@ See <a class="reference internal" href="#get-versions">get-versions</a> for how 
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ bse get-basis sto-3g nwchem
 #----------------------------------------------------------------------
 # Basis Set Exchange
-# Version v0.8.12+219.g77d31348
+# Version v0.8.12+231.g5295dffb
 # https://www.basissetexchange.org
 #----------------------------------------------------------------------
 #   Basis set: STO-3G
@@ -566,7 +659,7 @@ C    S
 </div>
 </section>
 <section id="get-refs">
-<h3>get-refs<a class="headerlink" href="#get-refs" title="Permalink to this heading"></a></h3>
+<h3>get-refs<a class="headerlink" href="#get-refs" title="Permalink to this heading">¶</a></h3>
 <p>Print formatted reference info for a basis set.</p>
 <p>This subcommand takes two required arguments: the name of the basis set,
 and the desired reference format. See <a class="reference internal" href="#list-basis-sets">list-basis-sets</a> and <a class="reference internal" href="#list-ref-formats">list-ref-formats</a>.</p>
@@ -634,7 +727,7 @@ See <a class="reference internal" href="#get-versions">get-versions</a> for how 
 </div>
 </section>
 <section id="get-info">
-<h3>get-info<a class="headerlink" href="#get-info" title="Permalink to this heading"></a></h3>
+<h3>get-info<a class="headerlink" href="#get-info" title="Permalink to this heading">¶</a></h3>
 <p>Print some metadata about a basis set.
 This takes only one required argument (the name of the basis set).</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ bse get-info cc-pvdz
@@ -658,7 +751,7 @@ Versions:
 </div>
 </section>
 <section id="get-notes">
-<h3>get-notes<a class="headerlink" href="#get-notes" title="Permalink to this heading"></a></h3>
+<h3>get-notes<a class="headerlink" href="#get-notes" title="Permalink to this heading">¶</a></h3>
 <p>Print the notes about a basis set.
 This takes only one required argument (the name of the basis set).</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ bse get-notes sto-3g
@@ -743,7 +836,7 @@ Atoms, A numerical Approach.  (John Wylie and Sons, N.Y., 1977)
 </div>
 </section>
 <section id="get-family">
-<h3>get-family<a class="headerlink" href="#get-family" title="Permalink to this heading"></a></h3>
+<h3>get-family<a class="headerlink" href="#get-family" title="Permalink to this heading">¶</a></h3>
 <p>Get the family of the basis set.
 This takes only one required argument (the name of the basis set).</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ bse get-family cc-pvtz-rifit
@@ -752,7 +845,7 @@ dunning_fit
 </div>
 </section>
 <section id="get-versions">
-<h3>get-versions<a class="headerlink" href="#get-versions" title="Permalink to this heading"></a></h3>
+<h3>get-versions<a class="headerlink" href="#get-versions" title="Permalink to this heading">¶</a></h3>
 <p>Get the available versions of a basis set.
 This takes only one required argument (the name of the basis set).</p>
 <p>With <code class="docutils literal notranslate"><span class="pre">-n</span></code> or <code class="docutils literal notranslate"><span class="pre">--no-description</span></code>, the command will hide the description of the version.</p>
@@ -768,7 +861,7 @@ This takes only one required argument (the name of the basis set).</p>
 </div>
 </section>
 <section id="get-family-notes">
-<h3>get-family-notes<a class="headerlink" href="#get-family-notes" title="Permalink to this heading"></a></h3>
+<h3>get-family-notes<a class="headerlink" href="#get-family-notes" title="Permalink to this heading">¶</a></h3>
 <p>Print the notes about a basis set family. This takes only one required argument (the basis set family).</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ bse get-family-notes sto
 Notes about STO basis sets
@@ -786,11 +879,11 @@ factors were taken from the literature and verified by dividing them out
 </div>
 </section>
 <section id="create-bundle">
-<h3>create-bundle<a class="headerlink" href="#create-bundle" title="Permalink to this heading"></a></h3>
+<h3>create-bundle<a class="headerlink" href="#create-bundle" title="Permalink to this heading">¶</a></h3>
 <p>See <a class="reference internal" href="bundling.html#bundles"><span class="std std-ref">Creating Basis Set Bundles</span></a></p>
 </section>
 <section id="convert-basis">
-<h3>convert-basis<a class="headerlink" href="#convert-basis" title="Permalink to this heading"></a></h3>
+<h3>convert-basis<a class="headerlink" href="#convert-basis" title="Permalink to this heading">¶</a></h3>
 <p>See <a class="reference internal" href="conversion.html#conversion"><span class="std std-ref">Converting basis sets</span></a></p>
 </section>
 </section>
@@ -798,33 +891,50 @@ factors were taken from the literature and verified by dividing them out
 
 
            </div>
+           
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="usage.html" class="btn btn-neutral float-left" title="Quickstart and Basic Usage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         <a href="conversion.html" class="btn btn-neutral float-right" title="Converting basis sets" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="usage.html" class="btn btn-neutral float-left" title="Quickstart and Basic Usage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, Benjamin Pritchard and Susi Lehtola.</p>
-  </div>
+    <p>
+        &#169; Copyright 2022, Benjamin Pritchard and Susi Lehtola.
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
         </div>
       </div>
+
     </section>
+
   </div>
-  <script>
+  
+
+  <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>
