@@ -1,91 +1,46 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>REST API Reference &mdash; Basis Set Exchange  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="The bsecurate command line interface" href="bsecurate_cli.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="index.html" class="icon icon-home"> Basis Set Exchange
           
-
-          
+          <a href="index.html" class="icon icon-home">
+            Basis Set Exchange
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Quickstart and Basic Usage</a></li>
@@ -112,80 +67,39 @@
 </li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">Basis Set Exchange</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-        
-      <li>REST API Reference</li>
-    
-    
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">REST API Reference</li>
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="_sources/web_api.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <section id="rest-api-reference">
-<h1>REST API Reference<a class="headerlink" href="#rest-api-reference" title="Permalink to this heading">¶</a></h1>
+<h1>REST API Reference<a class="headerlink" href="#rest-api-reference" title="Permalink to this heading"></a></h1>
 <p>Below is a list of all public API endpoints. Examples shown are in python
 (using the <a class="reference external" href="http://docs.python-requests.org/en/master/">requests</a> module).
 However, any software or command-line tool that can access APIs like this (curl, wget, etc) can also be used.</p>
 <p>Basis set names, formats, and reference formats are case insensitive.</p>
 <p>Note that the API is read-only, and does not allow for uploading or modifying data.</p>
 <section id="note-about-headers">
-<h2>Note about headers<a class="headerlink" href="#note-about-headers" title="Permalink to this heading">¶</a></h2>
+<h2>Note about headers<a class="headerlink" href="#note-about-headers" title="Permalink to this heading"></a></h2>
 <p>Additional header information (user agent, email) are optional. However,
 if you would like to share who you are or what you are doing, feel free to
 add these fields. We will not use the email for any purpose other than to
@@ -194,7 +108,7 @@ notify you if your scripts are broken and causing us problems.</p>
 MolSSI, other than in aggregate form.</p>
 </section>
 <section id="specifying-elements">
-<h2>Specifying Elements<a class="headerlink" href="#specifying-elements" title="Permalink to this heading">¶</a></h2>
+<h2>Specifying Elements<a class="headerlink" href="#specifying-elements" title="Permalink to this heading"></a></h2>
 <p>Some endpoints take a string specifying which elements data should be obtained for.
 string is a comma-separated list of element symbols and/or Z numbers. Ranges can also be used.</p>
 <p>Symbols are not case sensitive and can be mixed with Z-numbers.</p>
@@ -214,7 +128,7 @@ string is a comma-separated list of element symbols and/or Z numbers. Ranges can
 </div></blockquote>
 </section>
 <section id="api-metadata">
-<h2><code class="docutils literal notranslate"><span class="pre">/api/metadata</span></code><a class="headerlink" href="#api-metadata" title="Permalink to this heading">¶</a></h2>
+<h2><code class="docutils literal notranslate"><span class="pre">/api/metadata</span></code><a class="headerlink" href="#api-metadata" title="Permalink to this heading"></a></h2>
 <p>Returns JSON representing the metadata about the basis sets contained in the BSE.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE_URL</span> <span class="o">+</span> <span class="s1">&#39;/api/metadata&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
@@ -223,7 +137,7 @@ string is a comma-separated list of element symbols and/or Z numbers. Ranges can
 </div>
 </section>
 <section id="api-formats">
-<h2><code class="docutils literal notranslate"><span class="pre">/api/formats</span></code><a class="headerlink" href="#api-formats" title="Permalink to this heading">¶</a></h2>
+<h2><code class="docutils literal notranslate"><span class="pre">/api/formats</span></code><a class="headerlink" href="#api-formats" title="Permalink to this heading"></a></h2>
 <p>Returns JSON representing which basis set formats are available, along with a description</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE_URL</span> <span class="o">+</span> <span class="s1">&#39;/api/formats&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
@@ -232,7 +146,7 @@ string is a comma-separated list of element symbols and/or Z numbers. Ranges can
 </div>
 </section>
 <section id="api-reference-formats">
-<h2><code class="docutils literal notranslate"><span class="pre">/api/reference_formats</span></code><a class="headerlink" href="#api-reference-formats" title="Permalink to this heading">¶</a></h2>
+<h2><code class="docutils literal notranslate"><span class="pre">/api/reference_formats</span></code><a class="headerlink" href="#api-reference-formats" title="Permalink to this heading"></a></h2>
 <p>Similar to <code class="docutils literal notranslate"><span class="pre">/api/formats</span></code>, but has info about which reference formats are supported</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE_URL</span> <span class="o">+</span> <span class="s1">&#39;/api/reference_formats&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
@@ -241,7 +155,7 @@ string is a comma-separated list of element symbols and/or Z numbers. Ranges can
 </div>
 </section>
 <section id="api-basis-basis-name-format-fmt">
-<h2><code class="docutils literal notranslate"><span class="pre">/api/basis/&lt;basis_name&gt;/format/&lt;fmt&gt;</span></code><a class="headerlink" href="#api-basis-basis-name-format-fmt" title="Permalink to this heading">¶</a></h2>
+<h2><code class="docutils literal notranslate"><span class="pre">/api/basis/&lt;basis_name&gt;/format/&lt;fmt&gt;</span></code><a class="headerlink" href="#api-basis-basis-name-format-fmt" title="Permalink to this heading"></a></h2>
 <p>Obtain basis set data. This is the main function of the basis set exchange.</p>
 <p>The output is a string, except when <code class="docutils literal notranslate"><span class="pre">&lt;fmt&gt;</span></code> is json. Basis names are not case sensitive.
 See <code class="docutils literal notranslate"><span class="pre">/api/metadata</span></code> for getting a list of basis sets. Formats can be obtained with <code class="docutils literal notranslate"><span class="pre">/api/formats</span></code>.</p>
@@ -335,7 +249,7 @@ See <code class="docutils literal notranslate"><span class="pre">/api/metadata</
 </div>
 </section>
 <section id="api-references-basis-name-format-fmt">
-<h2><code class="docutils literal notranslate"><span class="pre">/api/references/&lt;basis_name&gt;/format/&lt;fmt&gt;</span></code><a class="headerlink" href="#api-references-basis-name-format-fmt" title="Permalink to this heading">¶</a></h2>
+<h2><code class="docutils literal notranslate"><span class="pre">/api/references/&lt;basis_name&gt;/format/&lt;fmt&gt;</span></code><a class="headerlink" href="#api-references-basis-name-format-fmt" title="Permalink to this heading"></a></h2>
 <p>Obtain basis set data. This is the main function of the basis set exchange.</p>
 <p>The output is a string, except when <code class="docutils literal notranslate"><span class="pre">&lt;fmt&gt;</span></code> is json. Basis names are not case sensitive.
 See <code class="docutils literal notranslate"><span class="pre">/api/metadata</span></code> for getting a list of basis sets. Formats can be obtained with <code class="docutils literal notranslate"><span class="pre">/api/reference_formats</span></code>.</p>
@@ -368,7 +282,7 @@ See <code class="docutils literal notranslate"><span class="pre">/api/metadata</
 <span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE_URL</span> <span class="o">+</span> <span class="s1">&#39;/api/references/aug-cc-pvtz/format/bib&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 <span class="go">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
-<span class="gp">...</span>
+<span class="go">...</span>
 <span class="go">@article{balabanov2005a,</span>
 <span class="go">    author = {Balabanov, Nikolai B. and Peterson, Kirk A.},</span>
 <span class="go">    title = {Systematically convergent basis sets for transition metals. I. All-electron correlation consistent basis sets for the 3d elements Sc-Zn},</span>
@@ -398,12 +312,12 @@ See <code class="docutils literal notranslate"><span class="pre">/api/metadata</
 <span class="go">    year = {1992},</span>
 <span class="go">    doi = {10.1063/1.462569}</span>
 <span class="go">}</span>
-<span class="gp">...</span>
+<span class="go">...</span>
 </pre></div>
 </div>
 </section>
 <section id="api-notes-basis-name">
-<h2><code class="docutils literal notranslate"><span class="pre">/api/notes/&lt;basis_name&gt;</span></code><a class="headerlink" href="#api-notes-basis-name" title="Permalink to this heading">¶</a></h2>
+<h2><code class="docutils literal notranslate"><span class="pre">/api/notes/&lt;basis_name&gt;</span></code><a class="headerlink" href="#api-notes-basis-name" title="Permalink to this heading"></a></h2>
 <p>Obtain notes about a basis set. Output is plain text.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Get notes for 6-31g</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE_URL</span> <span class="o">+</span> <span class="s1">&#39;/api/notes/6-31g&#39;</span><span class="p">)</span>
@@ -419,12 +333,12 @@ See <code class="docutils literal notranslate"><span class="pre">/api/metadata</
 
 <span class="go">The 6-31G basis set uses 6 Gaussian primitives to expand the 1s core of second</span>
 <span class="go">period elements.</span>
-<span class="gp">...</span>
+<span class="go">...</span>
 </pre></div>
 </div>
 </section>
 <section id="api-family-notes-family">
-<h2><code class="docutils literal notranslate"><span class="pre">/api/family_notes/&lt;family&gt;</span></code><a class="headerlink" href="#api-family-notes-family" title="Permalink to this heading">¶</a></h2>
+<h2><code class="docutils literal notranslate"><span class="pre">/api/family_notes/&lt;family&gt;</span></code><a class="headerlink" href="#api-family-notes-family" title="Permalink to this heading"></a></h2>
 <p>Obtain notes about a family of basis sets. Output is plain text.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Get notes for the jensen family</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE_URL</span> <span class="o">+</span> <span class="s1">&#39;/api/family_notes/jensen&#39;</span><span class="p">)</span>
@@ -442,7 +356,7 @@ See <code class="docutils literal notranslate"><span class="pre">/api/metadata</
 
 
 <span class="go">aug-pc-n and  pc-n basis sets (where n indicates the level of polarization beyond the atomic system)</span>
-<span class="gp">...</span>
+<span class="go">...</span>
 </pre></div>
 </div>
 </section>
@@ -450,49 +364,32 @@ See <code class="docutils literal notranslate"><span class="pre">/api/metadata</
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="bsecurate_cli.html" class="btn btn-neutral float-left" title="The bsecurate command line interface" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2022, Benjamin Pritchard and Susi Lehtola.
-
-    </p>
+    <p>&#169; Copyright 2022, Benjamin Pritchard and Susi Lehtola.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>
