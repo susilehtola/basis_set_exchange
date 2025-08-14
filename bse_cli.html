@@ -209,7 +209,7 @@ data directory can be specified with <code class="docutils literal notranslate">
 data directory will be used.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ bse -d ${HOME}/my_data_dir list-basis-sets
 Traceback (most recent call last):
-  File &quot;/opt/hostedtoolcache/Python/3.10.18/x64/bin/bse&quot;, line 8, in &lt;module&gt;
+  File &quot;/opt/hostedtoolcache/Python/3.10.18/x64/bin/bse&quot;, line 7, in &lt;module&gt;
     sys.exit(run_bse_cli())
   File &quot;/opt/hostedtoolcache/Python/3.10.18/x64/lib/python3.10/site-packages/basis_set_exchange/cli/bse_cli.py&quot;, line 231, in run_bse_cli
     args = cli_check_normalize_args(args)
@@ -409,6 +409,7 @@ gamess_us       GAMESS US
 cp2k            CP2K
 crystal         Crystal
 veloxchem       VeloxChem
+json            json
 </pre></div>
 </div>
 </section>
@@ -502,7 +503,7 @@ See <a class="reference internal" href="#get-versions">get-versions</a> for how 
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ bse get-basis sto-3g nwchem
 #----------------------------------------------------------------------
 # Basis Set Exchange
-# Version 0.8.13.dev357+g2e9de455
+# Version 0.8.13.dev366+gcaac59b5
 # https://www.basissetexchange.org
 #----------------------------------------------------------------------
 #   Basis set: STO-3G
