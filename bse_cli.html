@@ -199,7 +199,7 @@ positional arguments:
 
 options:
   -h, --help            show this help message and exit
-  -V                    show program&#39;s version number and exit
+  -V                    show program's version number and exit
   -d, --data-dir PATH   Override which data directory to use
   -o, --output PATH     Output to given file rather than stdout
 </pre></div>
@@ -211,17 +211,17 @@ data directory can be specified with <code class="docutils literal notranslate">
 data directory will be used.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ bse -d ${HOME}/my_data_dir list-basis-sets
 Traceback (most recent call last):
-  File &quot;/opt/hostedtoolcache/Python/3.13.14/x64/bin/bse&quot;, line 6, in &lt;module&gt;
+  File "/opt/hostedtoolcache/Python/3.13.15/x64/bin/bse", line 6, in &lt;module&gt;
     sys.exit(run_bse_cli())
              ~~~~~~~~~~~^^
-  File &quot;/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/cli/bse_cli.py&quot;, line 308, in run_bse_cli
+  File "/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/cli/bse_cli.py", line 308, in run_bse_cli
     args = cli_check_normalize_args(args)
-  File &quot;/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/cli/check.py&quot;, line 159, in cli_check_normalize_args
+  File "/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/cli/check.py", line 159, in cli_check_normalize_args
     args_copy.data_dir = _cli_check_data_dir(args.data_dir)
                          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
-  File &quot;/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/cli/check.py&quot;, line 49, in _cli_check_data_dir
-    raise RuntimeError(&quot;Data directory &#39;{}&#39; does not exist or is not a directory&quot;.format(data_dir))
-RuntimeError: Data directory &#39;/home/runner/my_data_dir&#39; does not exist or is not a directory
+  File "/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/cli/check.py", line 49, in _cli_check_data_dir
+    raise RuntimeError("Data directory '{}' does not exist or is not a directory".format(data_dir))
+RuntimeError: Data directory '/home/runner/my_data_dir' does not exist or is not a directory
 </pre></div>
 </div>
 <p>Also, output can be written to a file rather than to the terminal</p>
@@ -437,7 +437,7 @@ guess    Initial guess
 <h3>get-data-dir<a class="headerlink" href="#get-data-dir" title="Link to this heading"></a></h3>
 <p>Print the default data directory (built into the BSE package)</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ bse get-data-dir
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data
 </pre></div>
 </div>
 </section>
@@ -462,7 +462,7 @@ x2c-JFIT             x2c coulomb fitting
 ...
 </pre></div>
 </div>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ bse list-basis-sets -f pople -s &#39;31g&#39;
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ bse list-basis-sets -f pople -s '31g'
 4-31G           4-31G valence double-zeta basis set
 6-31G           6-31G valence double-zeta
 6-31G(2df,p)    6-31G(2df,p)
@@ -507,7 +507,7 @@ See <a class="reference internal" href="#get-versions">get-versions</a> for how 
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ bse get-basis sto-3g nwchem
 #----------------------------------------------------------------------
 # Basis Set Exchange
-# Version 0.8.13.dev424+gc7b1be242
+# Version 0.8.13.dev432+g4adaf1372
 # https://www.basissetexchange.org
 #----------------------------------------------------------------------
 #   Basis set: STO-3G
@@ -517,7 +517,7 @@ See <a class="reference internal" href="#get-versions">get-versions</a> for how 
 #----------------------------------------------------------------------
 
 
-BASIS &quot;ao basis&quot; SPHERICAL PRINT
+BASIS "ao basis" SPHERICAL PRINT
 #BASIS SET: (3s) -&gt; [1s]
 H    S
       0.3425250914E+01       0.1543289673E+00
@@ -567,7 +567,7 @@ SP   3   1.00
 </pre></div>
 </div>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ bse get-basis cc-pvtz nwchem --noheader --version 0 --elements C --make-gen
-BASIS &quot;ao basis&quot; SPHERICAL PRINT
+BASIS "ao basis" SPHERICAL PRINT
 #BASIS SET: (10s,5p,2d,1f) -&gt; [4s,3p,2d,1f]
 C    S
    8236.0000000              0.0005310              0.0000000             -0.0001130              0.0000000
@@ -691,7 +691,7 @@ STO-3G Minimal Basis
 --------------------
 
 The exponents and contraction coefficients for the STO-3G basis sets were
-obtained by least-squares fitting of Slater-type AO&#39;s, with scaling factors
+obtained by least-squares fitting of Slater-type AO's, with scaling factors
 based on optimal values for a variety of molecules.  The s and p exponents for
 the valence shell were constrained to be equal.
 

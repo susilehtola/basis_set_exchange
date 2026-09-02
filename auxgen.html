@@ -261,26 +261,26 @@ parents give correspondingly better-conditioned auxiliary sets.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">basis_set_exchange</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">bse</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">basis_set_exchange.auxgen</span><span class="w"> </span><span class="kn">import</span> <span class="n">generate_auxiliary_basis</span>
 
-<span class="n">orbital</span> <span class="o">=</span> <span class="n">bse</span><span class="o">.</span><span class="n">get_basis</span><span class="p">(</span><span class="s1">&#39;cc-pVTZ&#39;</span><span class="p">,</span> <span class="n">elements</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">])</span>
+<span class="n">orbital</span> <span class="o">=</span> <span class="n">bse</span><span class="o">.</span><span class="n">get_basis</span><span class="p">(</span><span class="s1">'cc-pVTZ'</span><span class="p">,</span> <span class="n">elements</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">])</span>
 
 <span class="n">aux</span> <span class="o">=</span> <span class="n">generate_auxiliary_basis</span><span class="p">(</span>
     <span class="n">orbital</span><span class="p">,</span>
     <span class="n">threshold</span><span class="o">=</span><span class="mf">1.0e-7</span><span class="p">,</span>
-    <span class="n">scheme</span><span class="o">=</span><span class="s1">&#39;reduced&#39;</span><span class="p">,</span>
+    <span class="n">scheme</span><span class="o">=</span><span class="s1">'reduced'</span><span class="p">,</span>
     <span class="n">n_random</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
     <span class="c1"># contract and prune_lmax default to True; pass False to disable.</span>
 <span class="p">)</span>
 
 <span class="c1"># `aux` is a dict in the BSE component schema; emit any format:</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">bse</span><span class="o">.</span><span class="n">write_formatted_basis_str</span><span class="p">(</span><span class="n">aux</span><span class="p">,</span> <span class="s1">&#39;nwchem&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">bse</span><span class="o">.</span><span class="n">write_formatted_basis_str</span><span class="p">(</span><span class="n">aux</span><span class="p">,</span> <span class="s1">'nwchem'</span><span class="p">))</span>
 </pre></div>
 </div>
 <p>The size presets can also be reached straight from
 <a class="reference internal" href="user_api.html#basis_set_exchange.get_basis" title="basis_set_exchange.get_basis"><code class="xref py py-func docutils literal notranslate"><span class="pre">basis_set_exchange.get_basis()</span></code></a> via the <code class="docutils literal notranslate"><span class="pre">get_aux</span></code> argument, which
 goes through the same code path:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">aux_small</span>     <span class="o">=</span> <span class="n">bse</span><span class="o">.</span><span class="n">get_basis</span><span class="p">(</span><span class="s1">&#39;cc-pVTZ&#39;</span><span class="p">,</span> <span class="n">elements</span><span class="o">=</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span> <span class="n">get_aux</span><span class="o">=</span><span class="s1">&#39;cholesky-small&#39;</span><span class="p">)</span>
-<span class="n">aux_large</span>     <span class="o">=</span> <span class="n">bse</span><span class="o">.</span><span class="n">get_basis</span><span class="p">(</span><span class="s1">&#39;cc-pVTZ&#39;</span><span class="p">,</span> <span class="n">elements</span><span class="o">=</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span> <span class="n">get_aux</span><span class="o">=</span><span class="s1">&#39;cholesky-large&#39;</span><span class="p">)</span>
-<span class="n">aux_verylarge</span> <span class="o">=</span> <span class="n">bse</span><span class="o">.</span><span class="n">get_basis</span><span class="p">(</span><span class="s1">&#39;cc-pVTZ&#39;</span><span class="p">,</span> <span class="n">elements</span><span class="o">=</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span> <span class="n">get_aux</span><span class="o">=</span><span class="s1">&#39;cholesky-verylarge&#39;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">aux_small</span>     <span class="o">=</span> <span class="n">bse</span><span class="o">.</span><span class="n">get_basis</span><span class="p">(</span><span class="s1">'cc-pVTZ'</span><span class="p">,</span> <span class="n">elements</span><span class="o">=</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span> <span class="n">get_aux</span><span class="o">=</span><span class="s1">'cholesky-small'</span><span class="p">)</span>
+<span class="n">aux_large</span>     <span class="o">=</span> <span class="n">bse</span><span class="o">.</span><span class="n">get_basis</span><span class="p">(</span><span class="s1">'cc-pVTZ'</span><span class="p">,</span> <span class="n">elements</span><span class="o">=</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span> <span class="n">get_aux</span><span class="o">=</span><span class="s1">'cholesky-large'</span><span class="p">)</span>
+<span class="n">aux_verylarge</span> <span class="o">=</span> <span class="n">bse</span><span class="o">.</span><span class="n">get_basis</span><span class="p">(</span><span class="s1">'cc-pVTZ'</span><span class="p">,</span> <span class="n">elements</span><span class="o">=</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span> <span class="n">get_aux</span><span class="o">=</span><span class="s1">'cholesky-verylarge'</span><span class="p">)</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">get_aux=None</span></code> (the default) returns the orbital basis; the strings
@@ -302,9 +302,9 @@ have an element dict to hand:</p>
 <span class="p">)</span>
 
 <span class="n">aux_c</span> <span class="o">=</span> <span class="n">generate_auxiliary_basis_for_element</span><span class="p">(</span>
-    <span class="n">orbital</span><span class="p">[</span><span class="s1">&#39;elements&#39;</span><span class="p">][</span><span class="s1">&#39;6&#39;</span><span class="p">],</span>     <span class="c1"># cc-pVTZ or larger</span>
+    <span class="n">orbital</span><span class="p">[</span><span class="s1">'elements'</span><span class="p">][</span><span class="s1">'6'</span><span class="p">],</span>     <span class="c1"># cc-pVTZ or larger</span>
     <span class="n">threshold</span><span class="o">=</span><span class="mf">1.0e-7</span><span class="p">,</span>
-    <span class="n">scheme</span><span class="o">=</span><span class="s1">&#39;reduced&#39;</span><span class="p">,</span>
+    <span class="n">scheme</span><span class="o">=</span><span class="s1">'reduced'</span><span class="p">,</span>
 <span class="p">)</span>
 </pre></div>
 </div>
@@ -395,7 +395,7 @@ integer <code class="docutils literal notranslate"><span class="pre">n</span> <s
 <span class="n">aux</span> <span class="o">=</span> <span class="n">generate_sto_auxiliary_basis</span><span class="p">(</span><span class="n">orbital</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mf">1.0e-7</span><span class="p">)</span>
 
 <span class="n">err</span> <span class="o">=</span> <span class="n">sto_diagonal_ri_error</span><span class="p">(</span><span class="n">orbital</span><span class="p">,</span> <span class="n">aux</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;total diagonal RI error =&#39;</span><span class="p">,</span> <span class="n">err</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'total diagonal RI error ='</span><span class="p">,</span> <span class="n">err</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>By default each candidate keeps its natural radial power

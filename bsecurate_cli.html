@@ -140,7 +140,7 @@ positional arguments:
 
 options:
   -h, --help            show this help message and exit
-  -V                    show program&#39;s version number and exit
+  -V                    show program's version number and exit
   -d, --data-dir PATH   Override which data directory to use
   -o, --output PATH     Output to given file rather than stdout
 </pre></div>
@@ -172,48 +172,48 @@ options:
 <p>For a list of BSE JSON files, determine what elements the file contains data for.
 This works on table, element, and component data files.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ DATADIR=`bse get-data-dir`; bsecurate elements-in-files ${DATADIR}/6-31G.0.table.json ${DATADIR}/dunning/*element*json
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/6-31G.0.table.json                           H-Zn
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-cc-pV5+dZ.1.element.json         Na-Ar
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-cc-pV5Z.1.element.json           H-Ar,Sc-Kr
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-cc-pV6Z.1.element.json           H,He,B-Ne,Al-Ar
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-cc-pVD+dZ.1.element.json         Na-Ar
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-cc-pVDZ.1.element.json           H-Ar,Sc-Kr
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-cc-pVQ+dZ.1.element.json         Na-Ar
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-cc-pVQZ.1.element.json           H-Ar,Sc-Kr
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-cc-pVT+dZ.1.element.json         Na-Ar
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-cc-pVTZ.1.element.json           H-Ar,Sc-Kr
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-seg-cc-pV5Z-PP.1.element.json    Y-Cd,Hf-Hg
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-seg-cc-pVDZ-PP.1.element.json    Y-Cd,Hf-Hg
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-seg-cc-pVQZ-PP.1.element.json    Y-Cd,Hf-Hg
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-seg-cc-pVTZ-PP.1.element.json    Y-Cd,Hf-Hg
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-seg-cc-pwCV5Z-PP.1.element.json  Y-Cd,Hf-Hg
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-seg-cc-pwCVDZ-PP.1.element.json  Y-Cd,Hf-Hg
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-seg-cc-pwCVQZ-PP.1.element.json  Y-Cd,Hf-Hg
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-seg-cc-pwCVTZ-PP.1.element.json  Y-Cd,Hf-Hg
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/cc-pV5+dZ.1.element.json             Na-Ar
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/cc-pV5Z.1.element.json               H-Ar,Ca-Kr
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/cc-pV6Z.1.element.json               H,He,Be-Ne,Al-Ar
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/cc-pVD+dZ.1.element.json             Na-Ar
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/cc-pVDZ.1.element.json               H-Ar,Ca-Kr
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/cc-pVQ+dZ.1.element.json             Na-Ar
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/cc-pVQZ.1.element.json               H-Ar,Ca-Kr
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/cc-pVT+dZ.1.element.json             Na-Ar
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/cc-pVTZ.1.element.json               H-Ar,Ca-Kr
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/seg-cc-pV5Z-PP.1.element.json        Y-Cd,Hf-Hg
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/seg-cc-pVDZ-PP.1.element.json        Y-Cd,Hf-Hg
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/seg-cc-pVQZ-PP.1.element.json        Y-Cd,Hf-Hg
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/seg-cc-pVTZ-PP.1.element.json        Y-Cd,Hf-Hg
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/seg-cc-pwCV5Z-PP.1.element.json      Y-Cd,Hf-Hg
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/seg-cc-pwCVDZ-PP.1.element.json      Y-Cd,Hf-Hg
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/seg-cc-pwCVQZ-PP.1.element.json      Y-Cd,Hf-Hg
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/seg-cc-pwCVTZ-PP.1.element.json      Y-Cd,Hf-Hg
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/6-31G.0.table.json                           H-Zn
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-cc-pV5+dZ.1.element.json         Na-Ar
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-cc-pV5Z.1.element.json           H-Ar,Sc-Kr
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-cc-pV6Z.1.element.json           H,He,B-Ne,Al-Ar
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-cc-pVD+dZ.1.element.json         Na-Ar
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-cc-pVDZ.1.element.json           H-Ar,Sc-Kr
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-cc-pVQ+dZ.1.element.json         Na-Ar
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-cc-pVQZ.1.element.json           H-Ar,Sc-Kr
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-cc-pVT+dZ.1.element.json         Na-Ar
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-cc-pVTZ.1.element.json           H-Ar,Sc-Kr
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-seg-cc-pV5Z-PP.1.element.json    Y-Cd,Hf-Hg
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-seg-cc-pVDZ-PP.1.element.json    Y-Cd,Hf-Hg
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-seg-cc-pVQZ-PP.1.element.json    Y-Cd,Hf-Hg
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-seg-cc-pVTZ-PP.1.element.json    Y-Cd,Hf-Hg
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-seg-cc-pwCV5Z-PP.1.element.json  Y-Cd,Hf-Hg
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-seg-cc-pwCVDZ-PP.1.element.json  Y-Cd,Hf-Hg
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-seg-cc-pwCVQZ-PP.1.element.json  Y-Cd,Hf-Hg
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/aug-seg-cc-pwCVTZ-PP.1.element.json  Y-Cd,Hf-Hg
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/cc-pV5+dZ.1.element.json             Na-Ar
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/cc-pV5Z.1.element.json               H-Ar,Ca-Kr
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/cc-pV6Z.1.element.json               H,He,Be-Ne,Al-Ar
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/cc-pVD+dZ.1.element.json             Na-Ar
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/cc-pVDZ.1.element.json               H-Ar,Ca-Kr
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/cc-pVQ+dZ.1.element.json             Na-Ar
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/cc-pVQZ.1.element.json               H-Ar,Ca-Kr
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/cc-pVT+dZ.1.element.json             Na-Ar
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/cc-pVTZ.1.element.json               H-Ar,Ca-Kr
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/seg-cc-pV5Z-PP.1.element.json        Y-Cd,Hf-Hg
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/seg-cc-pVDZ-PP.1.element.json        Y-Cd,Hf-Hg
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/seg-cc-pVQZ-PP.1.element.json        Y-Cd,Hf-Hg
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/seg-cc-pVTZ-PP.1.element.json        Y-Cd,Hf-Hg
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/seg-cc-pwCV5Z-PP.1.element.json      Y-Cd,Hf-Hg
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/seg-cc-pwCVDZ-PP.1.element.json      Y-Cd,Hf-Hg
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/seg-cc-pwCVQZ-PP.1.element.json      Y-Cd,Hf-Hg
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/seg-cc-pwCVTZ-PP.1.element.json      Y-Cd,Hf-Hg
 </pre></div>
 </div>
 </section>
 <section id="component-file-refs">
 <h3>component-file-refs<a class="headerlink" href="#component-file-refs" title="Link to this heading"></a></h3>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ DATADIR=`bse get-data-dir`; bsecurate component-file-refs ${DATADIR}/dunning/cc-pVDZ.1.json
-/opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/cc-pVDZ.1.json
+/opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/basis_set_exchange/data/dunning/cc-pVDZ.1.json
     H,B-Ne  dunning1989a
     He      woon1994a
     Ca      koput2002a
@@ -295,12 +295,12 @@ set.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>$ cat graph_631g.dot
 // Basis Set Graph: 6-31g
 digraph {
-	&quot;6-31g&quot; -&gt; &quot;pople/31G.1.element.json&quot; [label=&quot;H,He&quot;]
-	&quot;6-31g&quot; -&gt; &quot;pople/6-31G.1.element.json&quot; [label=&quot;Li-Kr&quot;]
-	&quot;pople/31G.1.element.json&quot; -&gt; &quot;pople/31G/31G.1.json&quot; [label=&quot;H,He&quot;]
-	&quot;pople/6-31G.1.element.json&quot; -&gt; &quot;pople/6-31G/6-31G.1.json&quot; [label=&quot;Li-Ne,K-Kr&quot;]
-	&quot;pople/6-31G.1.element.json&quot; -&gt; &quot;pople/21G/6-21G-core.1.json
-pople/6-31G/6-31G-valence.1.json&quot; [label=&quot;Na-Ar&quot;]
+	"6-31g" -&gt; "pople/31G.1.element.json" [label="H,He"]
+	"6-31g" -&gt; "pople/6-31G.1.element.json" [label="Li-Kr"]
+	"pople/31G.1.element.json" -&gt; "pople/31G/31G.1.json" [label="H,He"]
+	"pople/6-31G.1.element.json" -&gt; "pople/6-31G/6-31G.1.json" [label="Li-Ne,K-Kr"]
+	"pople/6-31G.1.element.json" -&gt; "pople/21G/6-21G-core.1.json
+pople/6-31G/6-31G-valence.1.json" [label="Na-Ar"]
 }
 </pre></div>
 </div>

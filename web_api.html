@@ -131,27 +131,27 @@ string is a comma-separated list of element symbols and/or Z numbers. Ranges can
 <section id="api-metadata">
 <h2><code class="docutils literal notranslate"><span class="pre">/api/metadata</span></code><a class="headerlink" href="#api-metadata" title="Link to this heading"></a></h2>
 <p>Returns JSON representing the metadata about the basis sets contained in the BSE.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE_URL</span> <span class="o">+</span> <span class="s1">&#39;/api/metadata&#39;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE_URL</span> <span class="o">+</span> <span class="s1">'/api/metadata'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
-<span class="go">{&#39;3-21g&#39;: ...</span>
+<span class="go">{'3-21g': ...</span>
 </pre></div>
 </div>
 </section>
 <section id="api-formats">
 <h2><code class="docutils literal notranslate"><span class="pre">/api/formats</span></code><a class="headerlink" href="#api-formats" title="Link to this heading"></a></h2>
 <p>Returns JSON representing which basis set formats are available, along with a description</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE_URL</span> <span class="o">+</span> <span class="s1">&#39;/api/formats&#39;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE_URL</span> <span class="o">+</span> <span class="s1">'/api/formats'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
-<span class="go">{&#39;bsedebug&#39;: &#39;BSE Debug&#39;, &#39;cfour&#39;: &#39;CFOUR&#39;,...</span>
+<span class="go">{'bsedebug': 'BSE Debug', 'cfour': 'CFOUR',...</span>
 </pre></div>
 </div>
 </section>
 <section id="api-reference-formats">
 <h2><code class="docutils literal notranslate"><span class="pre">/api/reference_formats</span></code><a class="headerlink" href="#api-reference-formats" title="Link to this heading"></a></h2>
 <p>Similar to <code class="docutils literal notranslate"><span class="pre">/api/formats</span></code>, but has info about which reference formats are supported</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE_URL</span> <span class="o">+</span> <span class="s1">&#39;/api/reference_formats&#39;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE_URL</span> <span class="o">+</span> <span class="s1">'/api/reference_formats'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
-<span class="go">{&#39;bib&#39;: &#39;BibTeX&#39;, &#39;json&#39;: &#39;JSON&#39;,...</span>
+<span class="go">{'bib': 'BibTeX', 'json': 'JSON',...</span>
 </pre></div>
 </div>
 </section>
@@ -205,12 +205,12 @@ See <code class="docutils literal notranslate"><span class="pre">/api/metadata</
 </tbody>
 </table>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Get STO-3G as json</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE_URL</span> <span class="o">+</span> <span class="s1">&#39;/api/basis/sto-3g/format/json&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE_URL</span> <span class="o">+</span> <span class="s1">'/api/basis/sto-3g/format/json'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
-<span class="go">{&#39;name&#39;: &#39;STO-3G&#39;, &#39;names&#39;: [&#39;STO-3G&#39;], &#39;flags&#39;: [], &#39;family&#39;: &#39;sto&#39;, &#39;description&#39;: &#39;STO-3G Minimal Basis (3 functions/AO)&#39;,...</span>
+<span class="go">{'name': 'STO-3G', 'names': ['STO-3G'], 'flags': [], 'family': 'sto', 'description': 'STO-3G Minimal Basis (3 functions/AO)',...</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># Get 6-31G in nwchem format, getting only hydrogen, carbon, nitrogen, and oxygen</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE_URL</span> <span class="o">+</span> <span class="s1">&#39;/api/basis/6-31g/format/nwchem/?elements=1,6-8&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE_URL</span> <span class="o">+</span> <span class="s1">'/api/basis/6-31g/format/nwchem/?elements=1,6-8'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 <span class="go">#----------------------------------------------------------------------</span>
 <span class="go"># Basis Set Exchange</span>
@@ -224,7 +224,7 @@ See <code class="docutils literal notranslate"><span class="pre">/api/metadata</
 <span class="go">#----------------------------------------------------------------------</span>
 
 
-<span class="go">BASIS &quot;ao basis&quot; SPHERICAL PRINT</span>
+<span class="go">BASIS "ao basis" SPHERICAL PRINT</span>
 <span class="go">#BASIS SET: (4s) -&gt; [2s]</span>
 <span class="go">H    S</span>
 <span class="go">      0.1873113696E+02       0.3349460434E-01</span>
@@ -275,12 +275,12 @@ See <code class="docutils literal notranslate"><span class="pre">/api/metadata</
 </tbody>
 </table>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Get references for aug-cc-pvtz as json</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE_URL</span> <span class="o">+</span> <span class="s1">&#39;/api/references/aug-cc-pvtz/format/json&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE_URL</span> <span class="o">+</span> <span class="s1">'/api/references/aug-cc-pvtz/format/json'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
-<span class="go">[{&#39;reference_info&#39;: [{&#39;reference_description&#39;: &#39;The cc-pVTZ basis set&#39;, &#39;reference_data&#39;...</span>
+<span class="go">[{'reference_info': [{'reference_description': 'The cc-pVTZ basis set', 'reference_data'...</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># Same as above, but in bibtex</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE_URL</span> <span class="o">+</span> <span class="s1">&#39;/api/references/aug-cc-pvtz/format/bib&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE_URL</span> <span class="o">+</span> <span class="s1">'/api/references/aug-cc-pvtz/format/bib'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 <span class="go">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
 <span class="go">...</span>
@@ -321,7 +321,7 @@ See <code class="docutils literal notranslate"><span class="pre">/api/metadata</
 <h2><code class="docutils literal notranslate"><span class="pre">/api/notes/&lt;basis_name&gt;</span></code><a class="headerlink" href="#api-notes-basis-name" title="Link to this heading"></a></h2>
 <p>Obtain notes about a basis set. Output is plain text.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Get notes for 6-31g</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE_URL</span> <span class="o">+</span> <span class="s1">&#39;/api/notes/6-31g&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE_URL</span> <span class="o">+</span> <span class="s1">'/api/notes/6-31g'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 <span class="go">--------------------------------------------------------------------------------</span>
 <span class="go">   Original BSE Contributor: Dr. David Feller</span>
@@ -342,7 +342,7 @@ See <code class="docutils literal notranslate"><span class="pre">/api/metadata</
 <h2><code class="docutils literal notranslate"><span class="pre">/api/family_notes/&lt;family&gt;</span></code><a class="headerlink" href="#api-family-notes-family" title="Link to this heading"></a></h2>
 <p>Obtain notes about a family of basis sets. Output is plain text.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Get notes for the jensen family</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE_URL</span> <span class="o">+</span> <span class="s1">&#39;/api/family_notes/jensen&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">BASE_URL</span> <span class="o">+</span> <span class="s1">'/api/family_notes/jensen'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 <span class="go">Notes about the Jensen basis sets</span>
 <span class="go">=================================</span>
